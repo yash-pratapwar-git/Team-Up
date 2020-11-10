@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".profile">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="405dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Events Joined "
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="405dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Events Posted"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="94dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="146dp"
+            android:layout_height="153dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_person_black_24dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Username"
+            android:textSize="28dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="345dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="contact no."
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="185dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+

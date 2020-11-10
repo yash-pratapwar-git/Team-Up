@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c1Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".HomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="210dp"
+            android:layout_height="71dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="130dp"
+            android:text="Sign-Up"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="50dp"
+            android:textStyle="bold|italic">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="56dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="130dp"
+            android:layout_toRightOf="@id/textView4"
+            android:background="@color/colorPrimaryDark"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp_hihaha"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView3"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/ic_baseline_account_box_24px"></ImageView>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="216dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/imageView"
+            android:hint="Email-id"
+
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black">
+
+        </EditText>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_baseline_lock_24px"></ImageView>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="216dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/imageView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageView"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Register"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff">
+
+        </Button>
+
+        <Button
+            android:id="@+id/registerlinkbutton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/loginbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:text="Already have an account? Login here."
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15dp">
+
+        </Button>
+
+
+        <!--<EditText
+        android:id="@+id/password"
+        android:layout_width="215dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="215dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="74dp"
+        android:ems="10"
+        android:hint="Email-id"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="262dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="SIGN-UP"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="210dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="74dp"
+        android:text="Sign-Up"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="74dp"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp_hihaha"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="74dp"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_baseline_account_box_24px" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginbutton"
+        app:layout_constraintEnd_toStartOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_baseline_lock_24px" />
+
+    <Button
+        android:id="@+id/registerlinkbutton"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="43dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login Here"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />-->
+
+        <!-- <EditText
+        android:id="@+id/email"
+        android:layout_width="354dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:hint="email-Id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="353dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="393dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="330dp"
+        android:text="register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/registerlinkbutton"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="43dp"
+        android:text="login Here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />-->
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
